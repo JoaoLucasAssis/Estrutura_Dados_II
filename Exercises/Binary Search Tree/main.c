@@ -32,7 +32,6 @@ struct Node *InsertBST(struct Node *root, int data) {
   else if (root->data < data)
     root->right = InsertBST(root->right, data);
 
-  // Retorna o nó raiz (pode ser o mesmo ou atualizado)
   return root;
 }
 

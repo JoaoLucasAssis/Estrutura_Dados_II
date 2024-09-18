@@ -18,6 +18,7 @@ int BalanceFactor(struct Node *node) {
     if (node == NULL)
         return 0;
     return getHeight(node->left) - getHeight(node->right);
+    
 }
 
 int Max(int n1, int n2) {

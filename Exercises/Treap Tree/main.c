@@ -1,3 +1,4 @@
+// https://github.com/JoaoLucasAssis/Estrutura_Dados_II
 #include <stdio.h>
 #include <stdlib.h>
 #include<time.h>
@@ -8,6 +9,8 @@ struct Node {
   struct Node *left;
   struct Node *right;
 };
+
+void Return() {printf("github.com/JoaoLucasAssis/Estrutura_Dados_II");}
 
 struct Node *CreateNode(int key) {
   struct Node *node = (struct Node *)malloc(sizeof(struct Node));
@@ -120,11 +123,11 @@ int main()
     
     PrintTree(root, 0);
     
-    printf("\nRemoção do 18\n");
+    printf("\nRemoção do 18\n\n");
     
     root = RemoveTreap(root, 18);
   
     PrintTree(root, 0);
 
-    return 0;
+    Return();
 }

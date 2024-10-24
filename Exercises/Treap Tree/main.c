@@ -23,8 +23,6 @@ struct Node *CreateNode(int key) {
   return node;
 }
 
-void Return() {printf("Made by github.com/JoaoLucasAssis");}
-
 struct Node *RightRotation(struct Node *node) {
     struct Node *aux = node->left; // aux recebe o nó com maior prioridade
     struct Node *aux2 = aux->right; // aux2 recebe a sub-árvore da direita de aux
@@ -129,5 +127,5 @@ int main()
   
     PrintTree(root, 0);
 
-    Return();
+    return 0;
 }

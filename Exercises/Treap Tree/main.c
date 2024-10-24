@@ -10,8 +10,6 @@ struct Node {
   struct Node *right;
 };
 
-void Return() {printf("github.com/JoaoLucasAssis/Estrutura_Dados_II");}
-
 struct Node *CreateNode(int key) {
   struct Node *node = (struct Node *)malloc(sizeof(struct Node));
 
@@ -24,6 +22,8 @@ struct Node *CreateNode(int key) {
 
   return node;
 }
+
+void Return() {printf("Made by github.com/JoaoLucasAssis");}
 
 struct Node *RightRotation(struct Node *node) {
     struct Node *aux = node->left; // aux recebe o nó com maior prioridade
